@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engage</title>
+
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+</style>
+<style>
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 11%;
+    padding-bottom: 4%;
+  }
+
+  .button {
+    background: rgb(0, 0, 0, 0.2);
+    border: 2px solid #fd5e53;
+    border-radius: 50px;
+    padding: 9px 25px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 8px 25px;
+  }
+
+  .sidebutton {
+    list-style: none;
+  }
+
+  .left {
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  .left h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 46px;
+    margin-top: 15px;
+  }
+
+  .left p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 450;
+  }
+
+  .left h4 {
+    font-family: Poppins, sans-serif;
+    font-size: 30px;
+    color: rgb(228, 67, 67);
+  }
+ .left button{
+  color: rgb(0, 0, 0);
+ }
+
+
+  .second {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+
+  .sleft {
+    margin-left: 80px;
+    padding-left: 20px;
+    font-weight: 500;
+  }
+
+  .sright {
+    margin-left: 250px;
+    font-size: 30px;
+  }
+
+  .sleft p {
+    color: rgb(228, 67, 67);
+  }
+
+  .devicon {
+    margin-top: -20px;
+    color: white;
+    font-size: 20px;
+  }
+
+  section {
+    margin-top: -10%;
+  }
+</style>
+
+<body id="Home">
+  <header>
+    <div class="logo">
+      <p>EngageX</p>
+    </div>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+            viewBox="0 -960 960 960" width="26px" fill="#060303">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg></a></li>
+      <li><a href="#">My Profile</a></li>
+      <li><a href="#">Edit Profile</a></li>
+      <li><a href="#">Explore Community</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+    <nav>
+      <ul>
+        <li class="hideOnMobile"><a href="#Home">Home</a></li>
+        <li class="hideOnMobile"><a href="#Services">Services</a></li>
+        <li class="hideOnMobile"><a href="#Projects">Projects</a></li>
+        <li class="hideOnMobile"><a href="#About">About</a></li>
+
+      </ul>
+    </nav>
+
+    <button class="button" onclick="window.location='login.html' ;" value="click here" /> <b>Login
+    </b></button>
+    <div class="sidebutton">
+      <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+            viewBox="0 -960 960 960" width="26px" fill="#060303">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg></a></li>
+    </div>
+  </header>
+  <div class="video">
+
+    <div class="hero">
+      <div class="video">
+        <video autoplay loop muted plays-inline>
+          <source src="accenture video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="second">
+        <div class="left">
+          <h4>AWARD WINNING</h4>
+          <h1>DIGITAL MARKETING AGENCY</h1>
+          <p>
+            At EngageX, we blend creativity and technology to deliver cutting-edge digital marketing solutions that drive engagement, increase conversions, and boost your brand's online presence.
+          </p>
+          <!-- <a href="contact.html" button class="button" type="submit" colour:"red" value="Submit">Contact us</button> </a> -->
+          <button class="button" onclick="window.location='contact.html' ;" value="click here" /> <b>Contact Us
+          </b></button>
+        </div>
+
+      </div>
+    </div>  
+    <div id="Services"></div>
+
+    <div id="Services" class="second">
+      <div class="sleft">
+        <p>WHAT WE OFFER</p>
+        <h1>SERVICE PROVIDE FOR YOU</h1>
+      </div>
+      <div class="sright"> From SEO and content marketing to social media and PPC campaigns, we offer a full suite of digital services designed to elevate your brand and accelerate growth</div>
+
+    </div>
+    </head>
+
+    <br>
+    <br>
+    <br>
+    <center>
+      <!--For slider -->
+      <section>
+
+
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper content">
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <div class="devicon"><i class="fa-solid fa-code"></i></div>
+                  <img src="image1.jpg" alt="">
+                  <div class="description">
+                    <h3>Digital Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <button><a href="#">Get Started</a></button>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <div class="devicon"><i class="fa-solid fa-code"></i></div>
+                  <img src="image2.jpg" alt="">
+                  <div class="description">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <button><a href="#">Get Started</a></button>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <div class="devicon"><i class="fa-solid fa-code"></i></div>
+                  <img src="image3.jpg" alt="">
+                  <div class="description">
+                    <h3>SEO Optimization</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <button><a href="#">Get Started</a></button>
+                  </div>
+                </div>
+
+
+
+
+
+
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <div class="devicon"><i class="fa-solid fa-code"></i></div>
+                  <img src="image4.jpg" alt="">
+                  <div class="description">
+                    <h3>Market Research</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <button><a href="#">Get Started</a></button>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <div class="devicon"><i class="fa-solid fa-code"></i></div>
+                  <img src="image5.jpg" alt="">
+                  <div class="description">
+                    <h3>Email Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <button><a href="#">Get Started</a></button>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <div class="devicon"><i class="fa-solid fa-code"></i></div>
+                  <img src="image6.jpg" alt="">
+                  <div class="description">
+                    <h3>Marketing Research & Reporting</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <button><a href="#">Get Started</a></button>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <div class="devicon"><i class="fa-solid fa-code"></i></div>
+                  <img src="image7.jpg" alt="">
+                  <div class="description">
+                    <h3>Keyword Targeting</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <button><a href="#">Get Started</a></button>
+                  </div>
+                </div>
+
+
+
+
+
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <div class="devicon"><i class="fa-solid fa-code"></i></div>
+                  <img src="image8.jpg" alt="">
+                  <div class="description">
+                    <h3>Brand promotion</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <button><a href="#">Get Started</a></button>
+                  </div>
+                </div>
+
+
+
+
+
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <div class="devicon"><i class="fa-solid fa-code"></i></div>
+                  <img src="image9.jpg" alt="">
+                  <div class="description">
+                    <h3>Content Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <button><a href="#">Get Started</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <div class="devicon"><i class="fa-solid fa-code"></i></div>
+                  <img src="image10.jpg" alt="">
+                  <div class="description">
+                    <h3>Social Media Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <button><a href="#">Get Started</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <div class="devicon"><i class="fa-solid fa-code"></i></div>
+                  <img src="image11.jpg" alt="">
+                  <div class="description">
+                    <h3>Pay Per Click</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <button><a href="#">Get Started</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <div class="devicon"><i class="fa-solid fa-code"></i></div>
+                  <img src="image12.jpg" alt="">
+                  <div class="description">
+                    <h3>Web Designing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <button><a href="#">Get Started</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+      <!-- <div class="imagehover1">
+      <div class="left1"></div>
+      <div class="right1">
+        <h3>web development</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+      </div>
+      
+    </div> -->
+
+      <br>
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <script src="./script.js"></script>
+</body>
+</center>
+<br>
+<br>
+<script>
+  jQuery(function () {
+    const img = "https://media.istockphoto.com/id/1371339413/photo/co-working-team-meeting-concept-businessman-using-smart-phone-and-digital-tablet-and-laptop.jpg?s=612x612&w=0&k=20&c=ysEsVw3q2axYt3oVZAuQjtHRlN3lY-U_e0ikK5yKIXQ=";
+    jQuery("#right1").click(function () {
+      jQuery(".toggle-img img").attr('srcset', img);
+      jQuery(".toggle-img img").attr('src', img);
+    });
+  });
+</script>
+
+
+<script src="script.js"></script>
+
+
+<!--For demo-->
+<style>
+  
+  .timeline{
+  position:relative;
+  max-width:1200px;
+  margin:100px auto;
+  }
+  .Pcontainer{
+  padding:10px 50px;
+  position:relative;
+  width:45%;
+  animation:movedown 1s linear forwards;
+  opacity:0;
+  
+}
+  @keyframes
+  movedown{
+  0%{
+  opacity:1;
+  transform:translateY(-30px);
+  }
+  100%{
+  opacity:1;
+  transform:translateY(0px);
+  }
+  }
+  .Pcontainer:nth-child(1)
+  {
+  animation-delay:0s;
+  }
+  .Pcontainer:nth-child(2)
+  {
+  animation-delay:1s;
+  }
+  .Pcontainer:nth-child(3)
+  {
+  animation-delay:2s;
+  }
+  .Pcontainer:nth-child(4)
+  {
+  animation-delay:3s;
+  }
+  .Pcontainer:nth-child(5)
+  {
+  animation-delay:4s;
+  }
+  .Pcontainer:nth-child(6)
+  {
+  animation-delay:5s;
+  }
+  .text-box{
+  padding:20px 30px;
+  background:#fff;
+  position:relative;
+  border-radius:6px;
+  font-size:15px;
+  background:linear-gradient(45deg,rgb(124,99,148),rgb(216,136,136));
+}
+.text-box:hover{
+  box-shadow:0 10px 15px rgba(0,0,0,.3);
+  transform:scale(1.03);
+}
+.Pleft{
+  left:0;
+}
+.Pright{
+  left:50%;
+}
+.text-box h2{
+  font-weight:600;
+}
+.Pleft-arrow{
+  height:0;
+  width:0;
+  position:absolute;
+  top:28px;
+  z-index:1;
+  border-top:15px solid transparent;
+  border-bottom:15px solid transparent;
+  border-left:15px solid rgb(14, 8, 8);
+  right:-15px;
+}
+.Pright-arrow{
+  height:0;
+  width:0;
+  position:absolute;
+  top:28px;
+  z-index:1;
+  border-top:15px solid transparent;
+  border-bottom:15px solid transparent;
+  border-right:15px solid rgb(17, 8, 8);
+  left:-15px;
+}
+.timeline::after{
+  content:'';
+  position:absolute;
+  width:6px;
+  height:100%;
+  background:rgb(87,52,52);
+  top:0;left:50%;
+  margin-left:-3px;
+  z-index:-1;
+  animation:moveline 6s linear forwards;
+  box-shadow:0 10px 15px rgba(0,0,0,.3);
+}
+@keyframes moveline{
+  0%{
+    height:0;
+  }
+  100%{
+    height:100%;
+  }
+  }
+  /*for
+  downside*/
+  @import
+  url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+  *
+  {
+  font-family:'Poppins',sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  outline:none;
+  border:none;
+  text-decoration:none;
+  text-transform:capitalize;
+  transition:.2slinear;
+}
+.container1{
+  background:linear-gradient(45deg,rgb(124,99,148),rgb(216,136,136));
+  padding:5px 5%;
+  padding-bottom:100px;
+  margin-top:5%;
+}
+.container1 .heading{
+  text-align:center;
+  padding-bottom:15px;
+  color:#fff;
+  text-shadow:0 5px 10px rgba(0,0,0,.2);
+  font-size:50px;
+}
+.container1 .box-container1{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:30px;
+  margin:30px;
+  padding:20px;
+}
+.container1 .box-container1 .box{
+  box-shadow:0 5px 10px rgba(0,0,0,.2);
+  border-radius:5px;
+  background:#fff;
+  text-align:center;
+  padding:5px10px;
+}
+.container1 .box-container1 .boximg{
+  height:50px;
+}
+.container1 .box-container1 .boxh3{
+  color:#444;
+  font-size:28px;
+  padding:10px0;
+}
+.container1 .box-container1 .boxp{
+  color:#777;
+  font-size:18px;
+  line-height:1.8;
+  font-weight:8px;
+}
+.container1 .box-container1 .box:hover{
+  box-shadow:0 10px 15px rgba(0,0,0,.3);
+  transform:scale(1.03);
+}
+@media(max-width:768px){
+  .container1{
+    padding:20px;
+  }
+}
+.highlights p{
+  color:rgb(228,67,67);
+  margin-bottom:15px;
+}
+.icons{
+  color:rgb(228,67,67);
+  font-size:30px;
+}
+.ourProject{
+  margin-bottom:15px;
+  font-weight:300;
+}
+.ourProject{
+  width:100%;
+  height:100px;
+  padding:20px 10%;
+  background:linear-gradient(45deg,rgb(132,111,152),rgb(211,167,167));
+  top:0;
+  left:0;
+  backdrop-filter:blur(10px);
+  border-bottom:2px solid rgba(255,255,255,0.2);
+}
+.ourProject::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+  transition:.2s;
+}
+  .ourProject:hover::before{
+  left:100%;
+  }
+
+
+</style>
+
+<body>
+  <div id="Projects"></div>
+  <div id="Projects" class="ourProject">
+    <center>
+      <p style="color:rgb(224, 53, 53)">OUR RECENT PROJECTS</p>
+    </center>
+
+    <center><b>
+        <h2 style="color:rgb(7, 7, 7)">WHY WE ARE BEST</h2>
+      </b></center>
+  </div>
+
+  <div class="timeline">
+
+
+    <div class="Pcontainer Pleft">
+      <div class="text-box">
+        <h2>Web Designing </h2>
+        <p>Designing websites to look more attractive</p>
+        <span class="Pleft-arrow"></span>
+      </div>
+    </div>
+
+
+
+
+    <div class="Pcontainer Pright">
+      <div class="text-box">
+        <h2>Digital Marketing </h2>
+        <p>Building design process within teams</p>
+        <span class="Pright-arrow"></span>
+      </div>
+    </div>
+
+
+
+
+    <div class="Pcontainer Pleft">
+      <div class="text-box">
+        <h2>Brand Promotion </h2>
+        <p>Promoting the brand to increase the reach</p>
+        <span class="Pleft-arrow"></span>
+      </div>
+    </div>
+
+
+
+
+    <div class="Pcontainer Pright">
+      <div class="text-box">
+        <h2>Web Development</h2>
+        <p>Developing Full Stack website for users</p>
+        <span class="Pright-arrow"></span>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+
+  <script>
+    var myImage = document.querySelector("#imageid");
+    function FirstImage() {
+      myImage.src = "image1.jpg";
+    }
+    function SecondImage() {
+      myImage.src = "image2.jpg";
+    }
+    function ThirdImage() {
+      myImage.src = "image3.jpg";
+    }
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar() {
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+
+  </script>
+
+
+
+  <div id="About"></div>
+  <div id="About" class="container1">
+    <div class="highlights">
+      <center>
+        <p>EXPERTS GROWTH</p>
+      </center>
+    </div>
+    <center>
+      <h2>OUR COMPANY GROWTH</h2>
+    </center>
+    <div class="box-container1">
+
+      <div class="box">
+        <div class="icons"><i class="fa-solid fa-heart"></i></div>
+        <h3>199+</h3>
+        <p>Satisfied Customer</p>
+      </div>
+
+      <div class="box">
+        <div class="icons"><i class="fa-solid fa-clock"></i></div>
+        <h3>1591+</h3>
+        <p>Day Of Operation</p>
+      </div>
+
+      <div class="box">
+        <div class="icons"><i class="fa-solid fa-circle-check"></i></div>
+        <h3>283+</h3>
+        <p>Complete Project</p>
+      </div>
+
+      <div class="box">
+        <div class="icons"><i class="fa-solid fa-trophy"></i></div>
+        <h3>75+</h3>
+        <p>Win Awards</p>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="customers">
+    <center>
+      <h2>OUR CUSTOMERS</h2>
+    </center>
+  </div>
+  <div class="logos">
+    <div class="logos-slide">
+      <img src="./logos/3m.svg" />
+      <img src="./logos/barstool-store.svg" />
+      <img src="./logos/budweiser.svg" />
+      <img src="./logos/buzzfeed.svg" />
+      <img src="./logos/forbes.svg" />
+      <img src="./logos/macys.svg" />
+      <img src="./logos/menshealth.svg" />
+      <img src="./logos/mrbeast.svg" />
+      <img src="./logos/3m.svg" />
+      <img src="./logos/barstool-store.svg" />
+      <img src="./logos/budweiser.svg" />
+      <img src="./logos/buzzfeed.svg" />
+      <img src="./logos/forbes.svg" />
+      <img src="./logos/macys.svg" />
+      <img src="./logos/menshealth.svg" />
+      <img src="./logos/mrbeast.svg" />
+    </div>
+  </div>
+
+
+
+  <footer class="footer">
+    <div class="fcontainer">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Developer APIs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms of Services</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Stay Connected</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

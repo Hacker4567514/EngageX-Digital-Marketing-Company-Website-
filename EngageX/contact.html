@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>User Information Form</title>
+        <style>
+            .form-container {
+                width: 500px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+
+            input[type="text"],
+            input[type="email"] {
+                width: 90%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+
+            input[type=checkbox] {
+                accent-color: rgb(253, 28, 28);
+            }
+
+            .button {
+                background-color: #f74a44;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                padding: 8px 60px;
+                border: rgb(228, 67, 67);
+            }
+            .buttons{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        </style>
+    </head>
+
+<body>
+
+    <div class="form-container">
+        <form action="https://getform.io/f/pboxjlza" method="POST">
+            <center>
+                <h3>Talk to us</h3>
+            </center>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="first-name">Name:</label>
+            <input type="text" id="first-name" name="first-name" required><br>
+
+            <label for="Message">Message:</label>
+            <input type="text" id="Message" name="Message" required><br>
+            <br>
+            <center>
+               <div class="buttons">
+                <button class="button" type="submit" colour:"red" value="Submit">Contact us</button>
+                <!-- <a href="index.html" button class="button" type="submit" colour:"red" value="Submit">Home</button></a> -->
+                <!-- <button class="button" onclick="window.location='index.html'" value="click here" /> Home </button> -->
+               </div>
+            </center>
+            <br>
+
+            <div><input type="checkbox" id="agree-checkbox" name="agree-checkbox">I agree to Fyle's terms and conditions, and provide consent to send me communication.</div>
+
+
+        </form>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
